@@ -1,0 +1,69 @@
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "result  result  result  result"
+    "mods    mods    mods    ops"
+    "nums    nums    nums    ops"
+    "nums    nums    nums    ops"
+    "nums    nums    nums    ops"
+    "nums    nums    nums    ops";
+  width: 80vw;
+  max-width: 800px;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid > div {
+  /* padding: 1rem; */
+  height: 4rem;
+}
+
+#result {
+  grid-area: result;
+  display: flex;
+  justify-content: flex-end;
+  background: #858694;
+  color: white;
+}
+
+#result * {
+  padding: 1rem;
+  margin: unset;
+}
+
+#mods {
+  grid-area: mods;
+  grid-template-columns: repeat(3, 1fr);
+  background: whitesmoke;
+}
+
+#ops {
+  grid-area: ops;
+  background: #f5913e;
+}
+
+#numbers {
+  grid-area: nums;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  /* grid-auto-flow: row; */
+  background: whitesmoke;
+}
+
+#cero {
+  grid-column: 1/3;
+  grid-row: 4;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  margin: unset;
+}

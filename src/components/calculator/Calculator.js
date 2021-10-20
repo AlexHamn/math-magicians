@@ -1,42 +1,58 @@
 import React from 'react';
 import './Calculator.css';
-// import calculate from './logic/calculate';
+import calculate from './logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: null,
+      next: null,
+    };
   }
 
+  calc = (e) => {
+    this.setState((prev) => calculate(prev, e.target.innerText));
+  };
+
   render() {
+    let result;
+    const { total, next } = this.state;
+    if (next === null && total === null) {
+      result = <div id="result">0</div>;
+    } else if (next === null) {
+      result = <div id="result">{total}</div>;
+    } else {
+      result = <div id="result">{next}</div>;
+    }
     return (
       <div>
         <div id="grid">
-          <div id="result"><p>TnT</p></div>
+          {result}
           <div className="grid" id="mods">
-            <div id="AC"><button type="button">AC</button></div>
-            <div id="+/-"><button type="button">+/-</button></div>
-            <div id="%"><button type="button">%</button></div>
+            <button id="AC" onClick={this.calc} type="button">AC</button>
+            <button id="+/-" onClick={this.calc} type="button">+/-</button>
+            <button id="%" onClick={this.calc} type="button">%</button>
           </div>
           <div className="grid" id="ops">
-            <div id="/"><button type="button">/</button></div>
-            <div id="*"><button type="button">*</button></div>
-            <div id="-"><button type="button">-</button></div>
-            <div id="+"><button type="button">+</button></div>
-            <div id="="><button type="button">=</button></div>
+            <button id="/" onClick={this.calc} type="button">÷</button>
+            <button id="x" onClick={this.calc} type="button">x</button>
+            <button id="-" onClick={this.calc} type="button">-</button>
+            <button id="+" onClick={this.calc} type="button">+</button>
+            <button id="=" onClick={this.calc} type="button">=</button>
           </div>
           <div className="grid" id="numbers">
-            <div id="cero"><button type="button">0</button></div>
-            <div id="1"><button type="button">1</button></div>
-            <div id="2"><button type="button">2</button></div>
-            <div id="3"><button type="button">3</button></div>
-            <div id="4"><button type="button">4</button></div>
-            <div id="5"><button type="button">5</button></div>
-            <div id="6"><button type="button">6</button></div>
-            <div id="7"><button type="button">7</button></div>
-            <div id="8"><button type="button">8</button></div>
-            <div id="9"><button type="button">9</button></div>
-            <div id="."><button type="button">.</button></div>
+            <button id="cero" onClick={this.calc} type="button">0</button>
+            <button id="1" onClick={this.calc} type="button">1</button>
+            <button id="2" onClick={this.calc} type="button">2</button>
+            <button id="3" onClick={this.calc} type="button">3</button>
+            <button id="4" onClick={this.calc} type="button">4</button>
+            <button id="5" onClick={this.calc} type="button">5</button>
+            <button id="6" onClick={this.calc} type="button">6</button>
+            <button id="7" onClick={this.calc} type="button">7</button>
+            <button id="8" onClick={this.calc} type="button">8</button>
+            <button id="9" onClick={this.calc} type="button">9</button>
+            <button id="." onClick={this.calc} type="button">.</button>
           </div>
         </div>
       </div>

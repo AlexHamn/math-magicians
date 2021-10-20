@@ -16,9 +16,14 @@
   display: grid;
 }
 
-.grid > div {
-  /* padding: 1rem; */
+.grid > button {
+  all: unset;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  margin: unset;
   height: 4rem;
+  border: 0.5px solid rgba(116, 116, 116, 0.13);
 }
 
 #result {
@@ -27,9 +32,6 @@
   justify-content: flex-end;
   background: #858694;
   color: white;
-}
-
-#result * {
   padding: 1rem;
   margin: unset;
 }
@@ -57,13 +59,4 @@
 #cero {
   grid-column: 1/3;
   grid-row: 4;
-}
-
-button {
-  all: unset;
-  cursor: pointer;
-  user-select: none;
-  width: 100%;
-  height: 100%;
-  margin: unset;
 }

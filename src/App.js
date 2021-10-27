@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Quote from './pages/Quote';
 import Home from './pages/Home';
 import CalculatorPage from './pages/CalculatorPage';
+import Footer from './components/Footer';
 
 const App = () => (
   <div className="App">
@@ -24,6 +25,7 @@ const App = () => (
         <Quote />
       </Route>
     </Switch>
+    <Footer />
   </div>
 );
 export default App;

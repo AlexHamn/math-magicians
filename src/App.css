@@ -37,6 +37,17 @@ h2 {
   text-justify: inter-word;
 }
 
+#calculatorSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator {
+  margin: 2rem;
+}
+
 .navBar ul {
   display: flex;
 }

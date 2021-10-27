@@ -26,8 +26,8 @@ class Calculator extends React.Component {
       result = <div id="result">{next}</div>;
     }
     return (
-      <div>
-        <div id="grid">
+      <>
+        <div id="calculator">
           {result}
           <div className="grid" id="mods">
             <button id="AC" onClick={this.calc} type="button">AC</button>
@@ -55,7 +55,7 @@ class Calculator extends React.Component {
             <button id="." onClick={this.calc} type="button">.</button>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }

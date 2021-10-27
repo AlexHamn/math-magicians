@@ -23,8 +23,8 @@ h2 {
 }
 
 #welcome {
+  margin: 1rem 2rem;
   text-align: center;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +32,7 @@ h2 {
 }
 
 #welcome p {
-  max-width: 80%;
+  max-width: 100%;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -42,9 +42,19 @@ h2 {
 }
 
 .navBar ul li {
-  margin: 1rem 2rem;
+  margin: 1rem 0;
+  padding: 0.3rem 2rem;
 }
 
 .App {
   text-align: center;
+}
+
+.navBar ul li:nth-child(2) {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.active-link {
+  color: purple;
 }

@@ -1,20 +1,12 @@
 import React from 'react';
 import './App.css';
 import Calculator from './components/calculator/Calculator';
+import Header from './components/Header';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Calculator />
-      </div>
-    );
-  }
-}
-
+const App = () => (
+  <div className="App">
+    <Header />
+    <Calculator />
+  </div>
+);
 export default App;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
+import './styles/App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Quote from './pages/Quote';

@@ -11,6 +11,8 @@
 header {
   display: flex;
   justify-content: space-between;
+  font-weight: 900;
+  font-size: x-large;
 }
 
 h1 {

@@ -13,6 +13,11 @@ const Navbar = () => {
       path: '/calculator',
       text: 'Calculator',
     },
+    {
+      id: 3,
+      path: '/quote',
+      text: 'Quote',
+    },
   ];
 
   return (

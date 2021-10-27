@@ -1,14 +1,8 @@
 import React from 'react';
-import { useRouteMatch } from 'react-router-dom';
-// import SinglePage from './SinglePage';
 
-const Quote = () => {
-  console.log(useRouteMatch());
-  // const { url, path } = useRouteMatch();
-  return (
-    <div>
-      <h2>OwO</h2>
-    </div>
-  );
-};
+const Quote = () => (
+  <div className="quote">
+    <p>&quot;ehh, good enough&quot; - Mediocrates</p>
+  </div>
+);
 export default Quote;

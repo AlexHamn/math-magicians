@@ -1,0 +1,83 @@
+
+* {
+  list-style: none;
+  font-family: "Comic Neue", "Courier New", Courier, monospace;
+  border-radius: 1%;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+  font-size: x-large;
+}
+
+h1 {
+  margin: 1rem 2rem;
+}
+
+h2 {
+  text-align: left;
+  margin: 1rem 2rem;
+}
+
+h3 {
+  margin-top: 5rem;
+}
+
+#welcome {
+  margin: 1rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome p {
+  max-width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#calculatorSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator {
+  margin: 2rem;
+}
+
+.navBar ul {
+  display: flex;
+}
+
+.navBar ul li {
+  margin: 1rem 0;
+  padding: 0.3rem 2rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.navBar ul li:nth-child(2) {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.active-link {
+  color: purple;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0 1rem;
+}

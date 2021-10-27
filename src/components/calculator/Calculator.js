@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Calculator.css';
+import '../../styles/Calculator.css';
 import calculate from './logic/calculate';
 
 const Calculator = () => {
@@ -25,7 +25,7 @@ const Calculator = () => {
 
   return (
     <div>
-      <div id="grid">
+      <div id="calculator">
         {result}
         <div className="grid" id="mods">
           <button id="AC" onClick={calc} type="button">AC</button>

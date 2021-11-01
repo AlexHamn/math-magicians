@@ -14,7 +14,9 @@
 
 ## Live Demo
 
-[Live Demo Link](#)
+[Heroku](https://math-magicians-heroku.herokuapp.com/)
+
+[Netlify](https://focused-mccarthy-1b64dc.netlify.app/)
 
 ## Future Updates & Roadmap:
 
